@@ -6,6 +6,8 @@
     color: #FF0000;
 }
 
+/*------ Banner ------*/
+
 .main-banner {
     background-image: url("../Images/Image@2x.png");
     height: 100vh;
@@ -74,9 +76,8 @@ a.banner-nav-items {
 
 a.banner-nav-items:hover {
     background-color: #FFFFFF33;
-    opacity: 30%;
-    color: white;
-
+    opacity: 100%;
+    color: #FFFFFF;
 }
 
 .banner-page {
@@ -87,6 +88,7 @@ a.banner-nav-items:hover {
     position: relative;
     font-family: 'Nunito Sans', sans-serif;
 }
+
 .banner-page-container {
     display: flex;
     flex-direction: column;
@@ -107,6 +109,7 @@ a.banner-nav-items:hover {
     font-weight: 700;
     text-align: center;
     padding-bottom: 54px;
+    line-height: 22px;
 }
 
 .banner-action-link-section {
@@ -155,6 +158,8 @@ a.banner-nav-items:hover {
     height: 21px;
     width: 22px;
 }
+
+/*------ Blog ------*/
 
 .blog {
     display: flex;
@@ -229,13 +234,13 @@ a.banner-nav-items:hover {
     opacity: 100%;
     align-self: flex-start;
     padding: 0 92px 0 0;
+    line-height: 19px;
 }
 
-.blog-article-btn {
-    padding: 10px 30px;
+.red-btn-small {
+    padding: 15px 30px;
     background-color: #FF0000;
     box-shadow: 0 3px 6px #FF00004D;
-    opacity: 100%;
     color: #FFFFFF;
     display: inline-block;
     text-decoration: none;
@@ -243,8 +248,9 @@ a.banner-nav-items:hover {
     font-size: 14px;
     font-weight: bold;
     margin-top: 15px;
-    align-self: flex-start;
 }
+
+/*------ Service ------*/
 
 .service {
     background-color: #28272C;
@@ -317,20 +323,10 @@ a.banner-nav-items:hover {
     color: #B2B2B2;
     opacity: 100%;
     text-align: center;
+    line-height: 19px;
 }
 
-.service-article-btn {
-    padding: 15px 30px;
-    background-color: #FF0000;
-    box-shadow: 0 3px 6px #FF00004D;
-    color: #FFFFFF;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 15px;
-}
+/*------ Contact ------*/
 
 .contact {
     display: flex;
@@ -340,17 +336,16 @@ a.banner-nav-items:hover {
     margin: 65px auto;
     font-family: 'Nunito Sans', sans-serif;
     color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .contact-header {
     font-size: 35px;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .contact-header::before,
@@ -395,6 +390,13 @@ a.banner-nav-items:hover {
     margin-bottom: 20px;
     border: 1px solid #D1D1D1;
     border-radius: 8px;
+    resize: none;
+}
+
+input,
+textarea {
+    font-size: 16px;
+    padding: 12px 8px;
 }
 
 input.form-input::placeholder,
@@ -403,7 +405,6 @@ textarea.form-textarea::placeholder {
     font-weight: 400;
     font-size: 16px;
     color: #B2B2B2;
-    padding: 12px 8px;
 }
 
 input.form-input:focus,
@@ -411,6 +412,7 @@ textarea.form-textarea:focus {
     border: 1px solid #FF0000;
     box-shadow: 0 1px 6px #FF00004D;
     padding: 12px 8px;
+    caret-color: transparent;
 }
 
 .checkbox input {
@@ -439,7 +441,7 @@ textarea.form-textarea:focus {
 
 .checkbox input:checked + span {
         background-image: url("../images/Icon Check.svg");
-        background-size: 10px;
+        background-size: 12px;
         background-position: center;
         background-repeat: no-repeat;
 }
@@ -452,6 +454,7 @@ textarea.form-textarea:focus {
 }
 
 .submit-btn {
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     padding: 10px 52px;
@@ -462,4 +465,74 @@ textarea.form-textarea:focus {
     border-radius: 50px;
     margin-top: 20px;
     align-self: flex-end;
+}
+
+/*------ Footer ------*/
+
+.footer {
+    background-color: #28272C;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-logo-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 40px 0 0 140px;
+}
+
+h2.footer-logo-title::before {
+    content: "";
+    background-image: url("../images/icon.svg");
+    background-size: cover;
+    display: block;
+    height: 20px;
+    width: 18px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 0 40px 140px;
+}
+
+.links-left-column,
+.links-right-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 140px;
+}
+
+.footer-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 4.5px 0;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    font-weight: light;
+    color: #D1D1D1;
+    padding: 0 140px 40px 0;
+    align-self: flex-end;
+}
+
+a.footer-link:hover {
+    color: #FF0000;
 }
