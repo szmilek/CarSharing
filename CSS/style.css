@@ -205,6 +205,7 @@ a.banner-nav-items:hover {
     justify-content: center;
     align-items: center;
     text-align: left;
+    width: 352px;
     opacity: 100%;
 }
 .article-image {
@@ -329,4 +330,136 @@ a.banner-nav-items:hover {
     font-size: 14px;
     font-weight: bold;
     margin-top: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 65px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-header {
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.contact-header::before,
+.contact-header::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #FF0000;
+    width: 50px;
+    box-shadow: 0 1px 6px #FF00004D;
+}
+
+.contact-header strong {
+    padding: 0 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-image {
+    height: 316px;
+    padding: 0 8px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    width: 444px;
+}
+
+.form-input {
+    height: 38px;
+    margin-bottom: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+.form-textarea {
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+input.form-input::placeholder,
+textarea.form-textarea::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B2B2B2;
+    padding: 12px 8px;
+}
+
+input.form-input:focus,
+textarea.form-textarea:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+    padding: 12px 8px;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+    height: 22px;
+    width: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.checkbox input:checked + span {
+        background-image: url("../images/Icon Check.svg");
+        background-size: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.label-style {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #B2B2B2;
+}
+
+.submit-btn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 52px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px #FF00004D;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 50px;
+    margin-top: 20px;
+    align-self: flex-end;
 }
